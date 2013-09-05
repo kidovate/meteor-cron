@@ -4,4 +4,6 @@ Package.describe({
 
 Package.on_use(function (api, where) {
   api.add_files('cron.js', ['client', 'server']);
+  api.export('Cron', 'server');
+  api.export('Cron', 'client');
 });
